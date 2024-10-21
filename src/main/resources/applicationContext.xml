@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
+    <context:component-scan base-package="ru.varnikov.enumMusic"/>
+
+<!--    <bean id="musicBean11"-->
+<!--          class="ru.varnikov.alex.ClassicalMusic"-->
+<!--          init-method="doMyInit"-->
+<!--          destroy-method="doMyDestroy"-->
+<!--          scope="prototype"-->
+<!--          factory-method="getClassicalMusic">-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicBean21"-->
+<!--          class="ru.varnikov.alex.RapMusic"-->
+<!--          init-method="doMyInit1"-->
+<!--          destroy-method="doMyDestroy1">-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicPlayer1"-->
+<!--          class="ru.varnikov.alex.MusicPlayer"-->
+<!--          scope="prototype">-->
+<!--        <constructor-arg ref="musicBean11"/>-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicPlayer2"-->
+<!--          class="ru.varnikov.alex.MusicPlayer">-->
+<!--        <property name="music" ref="musicBean21"/>-->
+<!---->
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicBean1"-->
+<!--          class="ru.varnikov.musicList.ClassicalMusic">-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicBean2"-->
+<!--          class="ru.varnikov.musicList.RapMusic">-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicBean3"-->
+<!--          class="ru.varnikov.musicList.RockMusic">-->
+<!--    </bean>-->
+<!---->
+<!--    <bean id="musicPlayerList"-->
+<!--          class="ru.varnikov.musicList.MusicPlayer">-->
+<!--        <property name="musicList">-->
+<!--            <list>-->
+<!--                <ref bean="musicBean1"/>-->
+<!--                <ref bean="musicBean2"/>-->
+<!--                <ref bean="musicBean3"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!---->
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--    </bean>-->
+
+</beans>
